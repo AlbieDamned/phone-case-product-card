@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xmlns">
+    <title>Blue Phone Case</title>
+
+    <!-- link to 'Zen Dots' & 'Outfit' fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- === # MAIN === -->
+    <main class="main-flex">
+
+      <!-- --- ## PRODUCT --- -->
+      <article class="card product block">
+        <img
+          src="img/product-img.jpg"
+          alt="A blue phone case in a blue background"
+          class="product__img"
+        />
+        <div class="product__info">
+          <div class="product__desc">
+            <h2>Blue Case</h2>
+            <p class="product__availablility">
+              <b>Available: </b>Iphone, Samsung Galaxy, Google Pixel
+            </p>
+          </div>
+          <div class="product__prices">
+            <p class="product__price" aria-label="discount price">$24.99</p>
+            <p class="product__price-original" aria-label="original price">
+              $19.99
+            </p>
+          </div>
+          <div class="flex-wrapper">
+            <button class="button button--accent" onclick="displayReviews()">
+              See reviews
+            </button>
+            <button class="button button--dark" onclick="addedToCart()">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- --- ## NOTIFIER -->
+      <article class="notifier">
+        <h2>Item Added!</h2>
+        <p><b>Blue Case</b> is added to car.</p>
+        <button class="button button--dark" onclick="closeNotifier()">
+          Close
+        </button>
+      </article>
+
+      <!-- --- ## REVIEWS --- -->
+      <article class="card reviews">
+        <header class="reviews__header">
+          <button class="button button__exit" onclick="displayProduct()">
+            &cross;
+          </button>
+          <h2>Reviews</h2>
+        </header>
+
+        <section class="reviews__col">
+          <article class="review">
+            <div class="flex-wrapper">
+              <h3>Alex J.</h3>
+              <div class="review__stars">
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star-half.svg" alt="" />
+              </div>
+            </div>
+            <p class="review__text">
+              “Stylish and sturdy. Love the color and feel of this case!”
+            </p>
+          </article>
+
+          <article class="review">
+            <div class="flex-wrapper">
+              <h3>Jaime S.</h3>
+              <div class="review__stars">
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star.svg" alt="" />
+                <img src="img/star-half.svg" alt="" />
+              </div>
+            </div>
+            <p class="review__text">
+              "Great protection without the bulk. Fits perfectly."
+            </p>
+          </article>
+        </section>
+        <button class="button button--dark">Post a Review</button>
+      </article>
+    </main>
+
+    <!-- link to JavaScript code -->
+    <script src="main.js"></script>
+  </body>
+</html>
